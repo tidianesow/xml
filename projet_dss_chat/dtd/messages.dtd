@@ -1,0 +1,9 @@
+<!ELEMENT messages (message+)>
+<!ELEMENT message (sender, receiver, content, timestamp, type)>
+<!ATTLIST message id ID #REQUIRED>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT receiver (#PCDATA)>
+<!ATTLIST receiver type (user | group) #REQUIRED>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT timestamp (#PCDATA)>
+<!ELEMENT type (text | file)>

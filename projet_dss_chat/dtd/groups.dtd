@@ -1,0 +1,7 @@
+<!ELEMENT groups (group+)>
+<!ELEMENT group (name, members, admin)>
+<!ATTLIST group id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT members (member+)>
+<!ELEMENT member (#PCDATA)>
+<!ELEMENT admin (#PCDATA)>
